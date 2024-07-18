@@ -1,0 +1,10 @@
+{
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --out ../../dist/2024/nodejs-base",
+    "export": "slidev export --per-slide --output ../nodejs-base.pdf"
+  }
+}
