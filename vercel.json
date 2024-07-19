@@ -6,58 +6,8 @@
   "outputDirectory": "dist",
   "redirects": [
     {
-      "source": "/2023/setup-miniprogram/pdf",
-      "destination": "https://github.com/PassionZale/talks/blob/main/2023-12-08/2023-12-08-setup-miniprogram.pdf?raw=true",
-      "statusCode": 302
-    },
-    {
-      "source": "/2023-12-08/pdf",
-      "destination": "https://github.com/PassionZale/talks/blob/main/2023-12-08/2023-12-08-setup-miniprogram.pdf?raw=true",
-      "statusCode": 302
-    },
-    {
-      "source": "/2023/setup-miniprogram/src",
-      "destination": "https://github.com/PassionZale/talks/tree/main/2023-12-08",
-      "statusCode": 302
-    },
-    {
-      "source": "2023-12-08",
-      "destination": "https://talks.lovchun.com/2023/setup-miniprogram/",
-      "statusCode": 301
-    },
-    {
-      "source": "/2023/setup-miniprogram/(.*)",
-      "destination": "/2023/setup-miniprogram/index.html",
-      "statusCode": 200
-    },
-    {
-      "source": "/2024/happy-coding-for-10-years/pdf",
-      "destination": "https://github.com/PassionZale/talks/blob/main/2024-03-10/2024-03-10-happy-coding-for-10-years.pdf?raw=true",
-      "statusCode": 302
-    },
-    {
-      "source": "/2024-03-10/pdf",
-      "destination": "https://github.com/PassionZale/talks/blob/main/2024-03-10/2024-03-10-happy-coding-for-10-years.pdf?raw=true",
-      "statusCode": 302
-    },
-    {
-      "source": "/2024/happy-coding-for-10-years/src",
-      "destination": "https://github.com/PassionZale/talks/tree/main/2024-03-10",
-      "statusCode": 302
-    },
-    {
-      "source": "2024-03-10",
-      "destination": "https://talks.lovchun.com/2024/happy-coding-for-10-years/",
-      "statusCode": 301
-    },
-    {
-      "source": "/2024/happy-coding-for-10-years/(.*)",
-      "destination": "/2024/happy-coding-for-10-years/index.html",
-      "statusCode": 200
-    },
-    {
       "source": "/",
-      "destination": "https://github.com/PassionZale/talks",
+      "destination": "https://slidevs.vercel.app/index.html",
       "statusCode": 302
     }
   ]

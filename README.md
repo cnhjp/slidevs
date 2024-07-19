@@ -25,3 +25,7 @@ fork自 https://github.com/PassionZale/
 ### 图片路径写法
 
 图片放在子项目的scr/public文件夹下。不要写成相对路径，比如`../public/xxx.png`这种；直接写`/xxx.png`。
+
+# 部署到vercel
+
+需要修改vercel.json文件。

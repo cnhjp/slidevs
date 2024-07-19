@@ -9,17 +9,22 @@ const packageFiles = (
   })
 ).sort();
 
+console.log("packageFiles: ", packageFiles);
+
 const bases = (
   await Promise.all(
     packageFiles.map(async (file) => {
-      const talkRoot = dirname(dirname(file));
+      const root = dirname(dirname(file));
       const json = JSON.parse(await fs.readFile(file, "utf-8"));
+      console.log(file, json);
       const pdfFile = (
         await fg("*.pdf", {
-          cwd: resolve(process.cwd(), talkRoot),
+          cwd: resolve(process.cwd(), root),
           onlyFiles: true,
         })
       )[0];
+
+      console.log("pdfFile", pdfFile);
 
       const command = json.scripts?.build;
 
@@ -30,7 +35,7 @@ const bases = (
       if (!base) return;
 
       return {
-        dir: talkRoot,
+        dir: root,
         base,
         pdfFile,
       };
@@ -45,25 +50,27 @@ interface RedirectItem {
 }
 
 const redirects = bases.flatMap(({ base, pdfFile, dir }) => {
+  console.log("**********************");
+  console.log(base, pdfFile, dir);
   const parts: RedirectItem[] = [];
 
   if (pdfFile) {
     parts.push({
       source: `${base}pdf`,
-      destination: `https://github.com/PassionZale/talks/blob/main/${dir}/${pdfFile}?raw=true`,
+      destination: `https://github.com/cnhjp/slidevs/blob/main/${dir}/${pdfFile}?raw=true`,
       statusCode: 302,
     });
 
     parts.push({
       source: `/${dir}/pdf`,
-      destination: `https://github.com/PassionZale/talks/blob/main/${dir}/${pdfFile}?raw=true`,
+      destination: `https://github.com/cnhjp/slidevs/blob/main/${dir}/${pdfFile}?raw=true`,
       statusCode: 302,
     });
   }
 
   parts.push({
     source: `${base}src`,
-    destination: `https://github.com/PassionZale/talks/tree/main/${dir}`,
+    destination: `https://github.com/cnhjp/slidevs/tree/main/${dir}`,
     statusCode: 302,
   });
 
@@ -93,7 +100,7 @@ const content = {
     ...[
       {
         source: "/",
-        destination: "https://github.com/PassionZale/talks",
+        destination: "https://slidevs.vercel.app/index.html",
         statusCode: 302,
       },
     ],

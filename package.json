@@ -1,16 +1,16 @@
 {
   "type": "module",
   "private": true,
-  "description": "Slides &amp; code for my talks",
-  "author": "Lei Zhang",
+  "description": "slides",
+  "author": "hjp",
   "license": "MIT",
-  "homepage": "https://github.com/PassionZale/talks#readme",
+  "homepage": "",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PassionZale/talks.git"
+    "url": "git+https://github.com/cnhjp/slidevs.git"
   },
   "bugs": {
-    "url": "https://github.com/PassionZale/talks/issues"
+    "url": "https://github.com/cnhjp/slidevs/issues"
   },
   "keywords": [],
   "scripts": {
