@@ -16,4 +16,4 @@ Node.js 还有一个用途就是桌面端。一路发展过来，从 NW.js到 El
 
 目前来看，**Node.js 最大的场景已经变成了泛前端领域的工具链了**。也正是因为泛前端生态的涌入，Node.js 的趋势越来越往前端生态的补足发展，加上桌面端领域，统称泛前端，服务端领域日渐式微。
 
-<img src="/nodejs用途.png" class="h-30 scale-150 absolute right-20 bottom-10" />
+<img src="/nodejs用途.png" class="scale-150 transition bg-white absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2" v-click />
