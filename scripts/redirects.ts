@@ -9,22 +9,17 @@ const packageFiles = (
   })
 ).sort();
 
-console.log("packageFiles: ", packageFiles);
-
 const bases = (
   await Promise.all(
     packageFiles.map(async (file) => {
       const root = dirname(dirname(file));
       const json = JSON.parse(await fs.readFile(file, "utf-8"));
-      console.log(file, json);
       const pdfFile = (
         await fg("*.pdf", {
           cwd: resolve(process.cwd(), root),
           onlyFiles: true,
         })
       )[0];
-
-      console.log("pdfFile", pdfFile);
 
       const command = json.scripts?.build;
 
@@ -50,8 +45,6 @@ interface RedirectItem {
 }
 
 const redirects = bases.flatMap(({ base, pdfFile, dir }) => {
-  console.log("**********************");
-  console.log(base, pdfFile, dir);
   const parts: RedirectItem[] = [];
 
   if (pdfFile) {
@@ -76,7 +69,7 @@ const redirects = bases.flatMap(({ base, pdfFile, dir }) => {
 
   parts.push({
     source: `${dir}`,
-    destination: `https://talks.lovchun.com${base}`,
+    destination: `https://slidevs.vercel.app${base}`,
     statusCode: 301,
   });
 

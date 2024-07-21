@@ -28,4 +28,6 @@ fork自 https://github.com/PassionZale/
 
 # 部署到vercel
 
+需要先执行pnpm run redirects生成新的vervel.json，给几个子项目生成路由。需要在各子项目的build命令中加上--base参数，参考slidev build --base /2024/nodejs-base/ --out ../../dist/2024/nodejs-base。
+
 需要修改vercel.json文件。

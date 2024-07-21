@@ -6,6 +6,31 @@
   "outputDirectory": "dist",
   "redirects": [
     {
+      "source": "/2024/nodejs-base/pdf",
+      "destination": "https://github.com/cnhjp/slidevs/blob/main/2024-07-31/nodejs-base.pdf?raw=true",
+      "statusCode": 302
+    },
+    {
+      "source": "/2024-07-31/pdf",
+      "destination": "https://github.com/cnhjp/slidevs/blob/main/2024-07-31/nodejs-base.pdf?raw=true",
+      "statusCode": 302
+    },
+    {
+      "source": "/2024/nodejs-base/src",
+      "destination": "https://github.com/cnhjp/slidevs/tree/main/2024-07-31",
+      "statusCode": 302
+    },
+    {
+      "source": "2024-07-31",
+      "destination": "https://slidevs.vercel.app/2024/nodejs-base/",
+      "statusCode": 301
+    },
+    {
+      "source": "/2024/nodejs-base/(.*)",
+      "destination": "/2024/nodejs-base/index.html",
+      "statusCode": 200
+    },
+    {
       "source": "/",
       "destination": "https://slidevs.vercel.app/index.html",
       "statusCode": 302
