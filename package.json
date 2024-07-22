@@ -20,7 +20,8 @@
     "lint": "eslint . --fix",
     "index": "esno scripts/entry.ts",
     "redirects": "esno scripts/redirects.ts",
-    "release": "vercel --prod"
+    "release": "vercel --prod",
+    "prepare": "husky"
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.0.0",
@@ -36,6 +37,7 @@
     "execa": "^8.0.1",
     "fast-glob": "^3.3.2",
     "http-server": "^14.1.1",
+    "husky": "^9.1.1",
     "playwright-chromium": "^1.40.0",
     "postcss": "^8.2.14",
     "prompts": "^2.4.2",

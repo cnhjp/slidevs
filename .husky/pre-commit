@@ -1,0 +1,5 @@
+   #!/bin/sh
+   # Run the export, redirects, and index scripts before committing
+   pnpm run export
+   pnpm run redirects
+   pnpm run index
