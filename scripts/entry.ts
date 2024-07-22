@@ -64,4 +64,17 @@ fs.readFile(inputFile, "utf8", (err, data) => {
       </html>`;
 
   fs.writeFile(outputFile, html, "utf8", (err) => {});
+
+  // 删除vercel.json中redirects的type字段和description字段
+  redirects.forEach((item) => {
+    delete item.type;
+    delete item.description;
+  });
+  jsonData.redirects = redirects;
+  fs.writeFile(
+    inputFile,
+    JSON.stringify(jsonData, null, 2),
+    "utf8",
+    (err) => {}
+  );
 });
