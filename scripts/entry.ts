@@ -67,9 +67,9 @@ fs.readFile(inputFile, "utf8", (err, data) => {
             ([description, types]) => `
           <tr>
             <td>${description}</td>
-            <td><a href="${types.pdf?.destination}">${types.pdf?.destination}</a></td>
-            <td><a href="${types.code?.destination}">${types.code?.destination}</a></td>
-            <td><a href="${types.ppt?.destination}">${types.ppt?.destination}</a></td>
+            <td><a href="${types.ppt?.destination}">ppt</a></td>
+            <td><a href="${types.pdf?.destination}">pdf</a></td>
+            <td><a href="${types.code?.destination}">source code</a></td>
           </tr>
         `
           )
