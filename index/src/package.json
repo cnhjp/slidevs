@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "dev": "npx http-server .",
     "build": "node build.js"
   },
   "dependencies": {

@@ -30,6 +30,7 @@ const bases = (
       if (!base) return;
 
       return {
+        description: json.description,
         dir: root,
         base,
         pdfFile,
@@ -39,22 +40,27 @@ const bases = (
 ).filter(Boolean);
 
 interface RedirectItem {
+  type?: "ppt" | "pdf" | "code";
+  description?: string;
   source: string;
   destination: string;
   statusCode: number;
 }
 
-const redirects = bases.flatMap(({ base, pdfFile, dir }) => {
+const redirects = bases.flatMap(({ base, pdfFile, dir, description }) => {
   const parts: RedirectItem[] = [];
 
   if (pdfFile) {
     parts.push({
+      description,
       source: `${base}pdf`,
       destination: `https://github.com/cnhjp/slidevs/blob/main/${dir}/${pdfFile}?raw=true`,
       statusCode: 302,
     });
 
     parts.push({
+      type: "pdf",
+      description,
       source: `/${dir}/pdf`,
       destination: `https://github.com/cnhjp/slidevs/blob/main/${dir}/${pdfFile}?raw=true`,
       statusCode: 302,
@@ -62,18 +68,23 @@ const redirects = bases.flatMap(({ base, pdfFile, dir }) => {
   }
 
   parts.push({
+    type: "code",
+    description,
     source: `${base}src`,
     destination: `https://github.com/cnhjp/slidevs/tree/main/${dir}`,
     statusCode: 302,
   });
 
   parts.push({
+    description,
     source: `${dir}`,
-    destination: `https://slidevs.vercel.app${base}`,
+    destination: `${base}`,
     statusCode: 301,
   });
 
   parts.push({
+    type: "ppt",
+    description,
     source: `${base}(.*)`,
     destination: `${base}index.html`,
     statusCode: 200,
@@ -93,7 +104,7 @@ const content = {
     ...[
       {
         source: "/",
-        destination: "https://slidevs.vercel.app/index.html",
+        destination: "/index.html",
         statusCode: 302,
       },
     ],
