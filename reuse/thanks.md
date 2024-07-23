@@ -7,6 +7,6 @@ class: 'text-center pb-5'
 
 <div>
 
-幻灯片可在 [<logos-github-icon /> PassionZale/talks](https://github.com/PassionZale/talks) 查看与下载
+幻灯片可在 [<logos-github-icon /> cnhjp/slidevs](https://github.com/cnhjp/slidevs) 查看与下载
 
 </div>
