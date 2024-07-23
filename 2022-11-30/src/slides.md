@@ -1,26 +1,15 @@
 ---
-# try also 'default' to start simple
-theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://images.unsplash.com/photo-1554114385-d2905b971497?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80
-# apply any windi css classes to the current slide
-class: 'text-center'
-# https://sli.dev/custom/highlighters.html
+layout: cover
 highlighter: shiki
-# show line numbers in code blocks
+background: https://images.unsplash.com/photo-1554114385-d2905b971497?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=80
 lineNumbers: false
-# some information about the slides, markdown enabled
-info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-# persist drawings in exports and build
+info: false
 drawings:
   persist: false
-# support download
-download: true
+transition: slide-left
+title: 浏览器中的事件循环机制
+titleTemplate: '%s'
+mdc: true
 ---
 
 # 浏览器中的事件循环机制
