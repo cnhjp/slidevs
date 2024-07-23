@@ -37,3 +37,5 @@ fork自 https://github.com/PassionZale/
 1. pnpm run export
 2. pnpm run redirects
 3. pnpm run index
+
+目前已经添加了husky，在commit前会自动执行这些操作，只需提交代码即可。

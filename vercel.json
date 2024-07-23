@@ -31,6 +31,31 @@
       "statusCode": 200
     },
     {
+      "source": "/2024/nodes-module/pdf",
+      "destination": "https://github.com/cnhjp/slidevs/blob/main/2024-08-15/nodejs-module.pdf?raw=true",
+      "statusCode": 302
+    },
+    {
+      "source": "/2024-08-15/pdf",
+      "destination": "https://github.com/cnhjp/slidevs/blob/main/2024-08-15/nodejs-module.pdf?raw=true",
+      "statusCode": 302
+    },
+    {
+      "source": "/2024/nodes-module/src",
+      "destination": "https://github.com/cnhjp/slidevs/tree/main/2024-08-15",
+      "statusCode": 302
+    },
+    {
+      "source": "2024-08-15",
+      "destination": "/2024/nodes-module/",
+      "statusCode": 301
+    },
+    {
+      "source": "/2024/nodes-module/(.*)",
+      "destination": "/2024/nodes-module/index.html",
+      "statusCode": 200
+    },
+    {
       "source": "/",
       "destination": "/index.html",
       "statusCode": 302

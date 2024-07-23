@@ -1,0 +1,11 @@
+{
+  "description": "Node.js 模块系统",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2024/nodes-module/ --out ../../dist/2024/nodejs-module",
+    "export": "slidev export --per-slide --output ../nodejs-module.pdf"
+  }
+}
