@@ -6,6 +6,31 @@
   "outputDirectory": "dist",
   "redirects": [
     {
+      "source": "/2022/browser-eventloop/pdf",
+      "destination": "https://github.com/cnhjp/slidevs/blob/main/2022-11-30/browser-eventloop.pdf?raw=true",
+      "statusCode": 302
+    },
+    {
+      "source": "/2022-11-30/pdf",
+      "destination": "https://github.com/cnhjp/slidevs/blob/main/2022-11-30/browser-eventloop.pdf?raw=true",
+      "statusCode": 302
+    },
+    {
+      "source": "/2022/browser-eventloop/src",
+      "destination": "https://github.com/cnhjp/slidevs/tree/main/2022-11-30",
+      "statusCode": 302
+    },
+    {
+      "source": "2022-11-30",
+      "destination": "/2022/browser-eventloop/",
+      "statusCode": 301
+    },
+    {
+      "source": "/2022/browser-eventloop/(.*)",
+      "destination": "/2022/browser-eventloop/index.html",
+      "statusCode": 200
+    },
+    {
       "source": "/2024/nodejs-base/pdf",
       "destination": "https://github.com/cnhjp/slidevs/blob/main/2024-07-31/nodejs-base.pdf?raw=true",
       "statusCode": 302
@@ -31,7 +56,7 @@
       "statusCode": 200
     },
     {
-      "source": "/2024/nodes-module/pdf",
+      "source": "/2024/nodejs-module/pdf",
       "destination": "https://github.com/cnhjp/slidevs/blob/main/2024-08-15/nodejs-module.pdf?raw=true",
       "statusCode": 302
     },
@@ -41,18 +66,18 @@
       "statusCode": 302
     },
     {
-      "source": "/2024/nodes-module/src",
+      "source": "/2024/nodejs-module/src",
       "destination": "https://github.com/cnhjp/slidevs/tree/main/2024-08-15",
       "statusCode": 302
     },
     {
       "source": "2024-08-15",
-      "destination": "/2024/nodes-module/",
+      "destination": "/2024/nodejs-module/",
       "statusCode": 301
     },
     {
-      "source": "/2024/nodes-module/(.*)",
-      "destination": "/2024/nodes-module/index.html",
+      "source": "/2024/nodejs-module/(.*)",
+      "destination": "/2024/nodejs-module/index.html",
       "statusCode": 200
     },
     {

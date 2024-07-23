@@ -1,0 +1,11 @@
+{
+  "description": "浏览器中的事件循环机制",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "slidev",
+    "build": "slidev build --base /2022/browser-eventloop/ --out ../../dist/2022/browser-eventloop",
+    "export": "slidev export --per-slide --output ../browser-eventloop.pdf"
+  }
+}

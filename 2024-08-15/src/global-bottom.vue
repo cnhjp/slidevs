@@ -5,9 +5,8 @@
   >
     <div class="flex items-center">
       <div>
-        Node.js基础 &nbsp; | &nbsp; Powered By
-        <mdi-briefcase class="text-orange-800" />
-        &nbsp; | &nbsp; hjp @ Jul. 31, 2024
+        &nbsp; Powered By hjp
+        <!-- <mdi-briefcase class="text-orange-800" /> -->
       </div>
     </div>
   </footer>
