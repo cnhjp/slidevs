@@ -15,7 +15,8 @@
   "keywords": [],
   "scripts": {
     "build": "rimraf dist && pnpm -r run build",
-    "export": "pnpm -r run export",
+    "export": "pnpm run -r --sequential export",
+    "export2": "pnpm run -r --workspace-concurrency=1 export",
     "dev": "esno scripts/picker.ts dev --open",
     "lint": "eslint . --fix",
     "index": "esno scripts/entry.ts",
