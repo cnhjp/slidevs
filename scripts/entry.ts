@@ -24,6 +24,11 @@ fs.readFile(inputFile, "utf8", (err, data) => {
         projects[description] = {};
       }
       projects[description][type] = { destination };
+      // 从pdf的source中提取出日期
+      if (type === "pdf") {
+        const date = destination.match(/\/(\d{4}-\d{2}-\d{2})\//)[1];
+        projects[description]["date"] = date;
+      }
     });
 
   // Convert data to HTML format using a table
@@ -58,19 +63,21 @@ fs.readFile(inputFile, "utf8", (err, data) => {
     <div class="container">
       <table>
         <tr>
-          <th></th></th>
+          <th></th>
+          <th>日期</th>
           <th>PPT</th></th>
           <th>PDF</th>
           <th>源码</th>
         </tr>
         ${Object.entries(projects)
           .map(
-            ([description, types]) => `
+            ([description, keys]) => `
           <tr>
             <td>${description}</td>
-            <td><a href="${types.ppt?.destination}">点我</a></td>
-            <td><a href="${types.pdf?.destination}">点我</a></td>
-            <td><a href="${types.code?.destination}">点我</a></td>
+            <td>${keys.date}</td>
+            <td><a href="${keys.ppt?.destination}">点我</a></td>
+            <td><a href="${keys.pdf?.destination}">点我</a></td>
+            <td><a href="${keys.code?.destination}">点我</a></td>
           </tr>
         `
           )

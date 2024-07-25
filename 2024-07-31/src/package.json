@@ -1,8 +1,8 @@
 {
-  "description": "Node.js 基础",
   "type": "module",
   "version": "0.0.0",
   "private": true,
+  "description": "Node.js 基础",
   "scripts": {
     "dev": "slidev",
     "build": "slidev build --base /2024/nodejs-base/ --out ../../dist/2024/nodejs-base",
