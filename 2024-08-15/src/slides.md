@@ -13,7 +13,18 @@ mdc: true
 
 # Node.js 模块系统
 
-Node.js不是一门编程语言，它是一个开源的、跨平台的 JavaScript 运行时环境。
+模块系统是现代软件系统中不可缺少的一部分。
 
-<img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg" class="h-40 mt-6" />
+---
+src: './pages/什么是模块系统.md'
+---
+
+
+---
+src: './pages/为什么需要模块化.md'
+---
+
+---
+src: './pages/NodeJS中的模块系统.md'
+---
 
