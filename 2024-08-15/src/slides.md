@@ -28,3 +28,18 @@ src: './pages/为什么需要模块化.md'
 src: './pages/NodeJS中的模块系统.md'
 ---
 
+---
+src: './pages/cjs.md'
+---
+
+---
+src: './pages/esm.md'
+---
+
+---
+src: './pages/esm2.md'
+---
+
+---
+src: './pages/区别.md'
+---
